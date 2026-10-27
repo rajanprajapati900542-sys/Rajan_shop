@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RajanShop — everyday tech and lifestyle essentials at great prices.">
+  <title>RajanShop | Everyday Finds, Better Prices</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Welcome to RajanShop — thoughtful finds for everyday life</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="RajanShop home"><span class="brand-mark">R</span> Rajan<span>Shop</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartOpen" aria-label="Open shopping cart">🛍 Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY EDIT</p>
+        <h1>Good finds.<br><span>Better living.</span></h1>
+        <p class="hero-description">Discover useful tech, fresh styles, and little upgrades that make every day feel better.</p>
+        <div class="hero-actions"><a class="button primary" href="#shop">Explore the shop <span>↗</span></a><a class="text-link" href="#about">Our story →</a></div>
+        <div class="hero-trust"><span>✓ Curated essentials</span><span>✓ Simple shopping</span><span>✓ Friendly support</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of shopping essentials">
+        <div class="sun"></div><div class="hero-card card-one"><span>NEW DROP</span><div class="headphone-art">◖)))</div><strong>Sound on.</strong></div>
+        <div class="hero-card card-two"><div class="shoe-art">👟</div><strong>Move your way</strong></div>
+        <div class="hero-card card-three"><div class="phone-art">▯</div><strong>Everyday tech</strong></div>
+        <div class="floating-label">YOUR NEXT<br>FAVOURITE FIND <b>✦</b></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Shopping benefits">
+      <div><span class="benefit-icon">✦</span><p><strong>Handpicked range</strong><small>Useful things, chosen well</small></p></div>
+      <div><span class="benefit-icon">↗</span><p><strong>Easy to explore</strong><small>Find your next favourite</small></p></div>
+      <div><span class="benefit-icon">♡</span><p><strong>Made for everyday</strong><small>Style meets practicality</small></p></div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">SHOP YOUR WAY</p><h2>Find your kind of <span>good.</span></h2></div><p>From useful gadgets to daily essentials, start with what you love.</p></div>
+      <div class="category-grid">
+        <button class="category-tile cat-tech" data-category="Tech"><span class="category-emoji">🎧</span><span><small>SMART PICKS</small><strong>Tech & gadgets</strong></span><b>↗</b></button>
+        <button class="category-tile cat-style" data-category="Style"><span class="category-emoji">👟</span><span><small>EVERYDAY STYLE</small><strong>Shoes & style</strong></span><b>↗</b></button>
+        <button class="category-tile cat-home" data-category="Home"><span class="category-emoji">🪴</span><span><small>FEEL-GOOD FINDS</small><strong>Home essentials</strong></span><b>↗</b></button>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">THE CUSTOMER FAVOURITES</p><h2>Popular <span>right now.</span></h2></div><label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"></label></div>
+      <div class="shop-controls"><div class="filter-group" id="filterGroup"><button class="filter active" data-category="All">All items</button><button class="filter" data-category="Tech">Tech</button><button class="filter" data-category="Style">Style</button><button class="filter" data-category="Home">Home</button></div><label class="sort-wrap">Sort by <select id="sortSelect"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="demo-note">Demo storefront for a student project. Products, prices and checkout are illustrative; no real payments are collected.</p>
+    </section>
+
+    <section class="promo">
+      <div><p class="eyebrow">A LITTLE SOMETHING EXTRA</p><h2>Small upgrades.<br><span>Big everyday energy.</span></h2><p>Explore useful picks designed to fit into your everyday routine.</p><a class="button light" href="#shop">Find your next find ↗</a></div>
+      <div class="promo-sticker"><span>GOOD<br>THINGS<br>INSIDE</span><b>✦</b></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-visual"><div class="about-circle">RS<span>✦</span></div><div class="about-tag">A student-built<br>storefront concept</div></div>
+      <div class="about-copy"><p class="eyebrow">HELLO FROM RAJANSHOP</p><h2>Shopping should feel <span>simple.</span></h2><p>RajanShop is a demo e-commerce concept built around one idea: discovering everyday essentials should be clear, enjoyable, and easy to navigate.</p><p>This project showcases a responsive storefront, product filtering, search, sorting, and a working demo cart using HTML, CSS, and JavaScript.</p><a class="text-link" href="#contact">Have a question? Get in touch →</a></div>
+    </section>
+
+    <section class="newsletter" id="contact"><div><p class="eyebrow">STAY IN THE LOOP</p><h2>Good finds in your inbox.</h2><p>Join our demo mailing list for new arrivals and everyday inspiration.</p></div><form id="newsletterForm"><label class="sr-only" for="emailInput">Email address</label><input id="emailInput" type="email" placeholder="Your email address" required><button class="button primary" type="submit">Sign me up ↗</button><p id="formMessage" role="status"></p></form></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">R</span> Rajan<span>Shop</span></a><p>Everyday finds, better prices.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></div><small>© <span id="year"></span> RajanShop · Student project demo · Designed with care.</small></footer>
+
+  <div class="overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-heading"><div><p class="eyebrow">YOUR BAG</p><h2>Shopping cart</h2></div><button id="cartClose" class="close-button" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p>Demo checkout only. No payment will be processed.</p><button id="checkoutButton" class="button primary full">Continue to demo checkout ↗</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
